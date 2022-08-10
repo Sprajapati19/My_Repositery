@@ -36,8 +36,8 @@ class ContactDetails:
 
 
 if __name__ == "__main__":
-    ContactList = {"Shubham": '9644783742',
-                   "Pankaj": '7869037024', "Jio": '9399773033'}
+    ContactList = {"Idea": 9644753443,
+                   "Airtel": 7869067594, "Jio": 9399773033}
     Contact1 = Contacts(ContactList)
     NewContact = ContactDetails()
 
