@@ -1,0 +1,59 @@
+def IntToRoman(num):
+    while(num != 0):
+        if num>= 1000:
+            div = num//1000
+            num = num%1000
+            print(div*'M' , end = "")
+        elif num >= 900:
+            div = num//900
+            num = num % 900
+            print(div * 'CM', end = "")
+        elif num >= 500:
+            div = num//500
+            num = num % 500
+            print(div * 'D', end = "")
+        elif num >= 400:
+            div = num//400
+            num = num % 400
+            print(div * 'CD', end = "")
+        elif num >= 100:
+            div = num//100
+            num = num % 100
+            print(div * 'C', end = "")
+        elif num >= 90:
+            div = num//90
+            num = num % 90
+            print(div * 'XC', end = "")
+        elif num >= 50:
+            div = num//50
+            num = num % 50
+            print(div * 'L', end = "")
+        elif num >= 40:
+            div = num//40
+            num = num % 40
+            print(div * 'XL', end = "")
+        elif num >= 10:
+            div = num//10
+            num = num % 10
+            print(div * 'X', end = "")
+        elif num >= 9:
+            div = num//9
+            num = num % 9
+            print(div * 'IX', end = "")
+        elif num >= 5:
+            div = num//5
+            num = num % 5
+            print(div * 'V', end = "")
+        elif num >= 4:
+            div = num//4
+            num = num % 4
+            print(div * 'IV', end = "")
+        else:
+            div = num//1
+            num = num % 1
+            print(div * 'I', end = "")
+        
+
+num = int(input("Enter a number : "))
+print("Roman number is : ", end = "")
+IntToRoman(num)
